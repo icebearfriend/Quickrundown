@@ -40,13 +40,13 @@ The list and array packaged with this build are not extensive. I couldn't spend 
 
 Known processes will simply be standard white text with a note off to the right. If one of the **known** processes also hits a category from the processcolor.cna script, then it will be *colorized()*. The lists for the color categories are found at the bottom of the script.
 
-![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step3_.png "Step 3")
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step4_more.png "Step 3")
 
 ### 4) Document new processes or update old one
 
-If and when you discover an *++UNKNOWN PROCESS++*, this is where the script gets good. Right click on the beacon to bring up the context menu, and select **Quickrundown** at the bottom. 
+If and when you discover an *++UNKNOWN PROCESS++* (as seen above), this is where the script gets good. Right click on the beacon to bring up the context menu, and select **Quickrundown** at the bottom. 
 
-![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step4_more.png "Unknown Process")
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step3_.png "Step 4 also")
 
 Place the full process name into the top box (*newprocess.exe*) and the note you would like for the processes in the box below it. Hit **create/update**.
 
