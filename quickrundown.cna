@@ -122,7 +122,7 @@ sub fullps{ # this function will run the ps command (bps) and utilize a bunch of
 
 
 
-sub colorized { # most of this code came from @r3dQu1nn and @oldb00t qll I did was just turn it into a function
+sub colorized { # most of this code came from @r3dQu1nn and @oldb00 all I did was just turn it into a function
                 # also added in an @infrastructure list that covers things like SIEM/SCCM/Monitoring software
 
 # arguments that were passed to this function and their correlation
