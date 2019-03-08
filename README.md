@@ -26,9 +26,13 @@ First, you will need to pull down Quickrundown.cna and place it on your filesyst
 
 Open the script and at the top you will see a variable labeled *$filesystem*. Edit this variable to say where *Quickrundown.cna* is being loaded from. Ensure that Cobaltstrike can **write** to this file
 
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step1.png "Step 1")
+
 ### 2) Once the script is loaded, pull up a beacon console and run the command **qrd**
 
 The command **qrd** will launch the quickrundown function. You can find this function in the script at *alias qrd*
+
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step2_.png "Step 2")
 
 ### 3) Examine the data
 
