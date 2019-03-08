@@ -12,7 +12,7 @@
 # DO THIS FIRST                     <-------------------- START HERE
 # Place the location of THIS cna script in $yourfile
 
-$yourfile = "/home/ubuntu/quickrundown.cna";
+$yourfile = "/home/ubuntu/Quickrundown/quickrundown.cna";
 
 # Seriously this is important ^^^^  <-------------------- DID YOU DO THIS?
 
@@ -109,7 +109,7 @@ sub fullps{ # this function will run the ps command (bps) and utilize a bunch of
   
   
   $allin .= "\n";
-  # send data to the beacon console. $1 is still referencing the becaon id that was passed from qrd() waaaay up there
+  # send data to the beacon console. $1 is still referencing the beacon id that was passed from qrd() waaaay up there
   blog2($1, "$allin");
   
   # clear the values so they can be used again
@@ -122,7 +122,7 @@ sub fullps{ # this function will run the ps command (bps) and utilize a bunch of
 
 
 
-sub colorized { # most of this code came from @r3dQu1nn and @oldb00tk qll I did was just turn it into a function
+sub colorized { # most of this code came from @r3dQu1nn and @oldb00t qll I did was just turn it into a function
                 # also added in an @infrastructure list that covers things like SIEM/SCCM/Monitoring software
 
 # arguments that were passed to this function and their correlation
@@ -139,7 +139,7 @@ sub colorized { # most of this code came from @r3dQu1nn and @oldb00tk qll I did 
     # split the process name from filetype and only retain the name
     ($temp, $null) = split('\.', $name);
     # this is the same 'push' code seen from fullps(), except this time we are pushing data with a color tag
-    # the biggets difference is the end portion, where we are pulling the VALUE out of the %kvpsystem array based on
+    # the biggest difference is the end portion, where we are pulling the VALUE out of the %kvpsystem array based on
     # the name of the process (split into temp, because you can't have a . in a KEY)
     push(@fullps, %(pid => $pid, entry => "\c4$[25]temp $[5]pid\t$[4]arch\t$[15]user\t" . %kvpsystem["$temp"]));
   
@@ -350,6 +350,7 @@ popup beacon_bottom {
 "Microsoft.Photos.exe",
 "HxTsr.exe",
 "backgroundTaskHost.exe",
+"chrome.exe",
 "fIrSt"
 );
 
@@ -413,6 +414,7 @@ HxTsr => "Outlook communications; Microsoft Office",
 SppExtComObj => "Key Management Service, licensing for Microsoft products",
 GoogleUpdate => "Downloads, runs, and installs Google updates for Google apps",
 backgroundTaskHost => "Legit Microsoft process. More details needed",
+chrome => "Chrome browser or tab",
 sEcOnD => "testdata"
 ); 
 
