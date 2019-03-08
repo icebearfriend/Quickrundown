@@ -40,13 +40,19 @@ The list and array packaged with this build are not extensive. I couldn't spend 
 
 Known processes will simply be standard white text with a note off to the right. If one of the **known** processes also hits a category from the processcolor.cna script, then it will be *colorized()*. The lists for the color categories are found at the bottom of the script.
 
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step3_.png "Step 3")
+
 ### 4) Document new processes or update old one
 
 If and when you discover an *++UNKNOWN PROCESS++*, this is where the script gets good. Right click on the beacon to bring up the context menu, and select **Quickrundown** at the bottom. 
 
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step4_more.png "Unknown Process")
+
 Place the full process name into the top box (*newprocess.exe*) and the note you would like for the processes in the box below it. Hit **create/update**.
 
 Continue these steps until you are satisfied with your research progress
+
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step4.png "Step 4")
 
 To **update** an existing processes, do everything that you would do to add in a new process: same process name, new note. 
 
@@ -56,10 +62,13 @@ To **update** an existing processes, do everything that you would do to add in a
 
 The processes you have researched are written to the *Quickrundown.cna* file, yes. However, they are not loaded into memory within Cobaltstrike just yet. Go to the *Script Console* within Cobaltstrike and reload the script
 
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step5.png "Step 5")
+
 ### 6) Verify and repeat
 
 With the script reloaded, run **qrd** again to see your work displayed. Known processes will be displayed in certain colors if they match specific categories (that you can add to, located at the bottom of the script). 
 
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step6.png "Step 6")
 
 ## Under the Hood
 
