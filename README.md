@@ -20,23 +20,23 @@ I tried to put as many comments as I could throughout this script to help aspiri
 
 Finally: the "just tell me how to turn it on" portion of the README. 
 
-### 1)Load the script
+### 1) Load the script
 
 First, you will need to pull down Quickrundown.cna and place it on your filesystem. Make sure you remember where on the filesystem you will be loading this script (/home/ubuntu/Quickrundown.cna, for example). 
 
 Open the script and at the top you will see a variable labeled *$filesystem*. Edit this variable to say where *Quickrundown.cna* is being loaded from. Ensure that Cobaltstrike can **write** to this file
 
-### 2)Once the script is loaded, pull up a beacon console and run the command **qrd**
+### 2) Once the script is loaded, pull up a beacon console and run the command **qrd**
 
 The command **qrd** will launch the quickrundown function. You can find this function in the script at *alias qrd*
 
-### 3)Examine the data
+### 3) Examine the data
 
 The list and array packaged with this build are not extensive. I couldn't spend a week or more jamming processes into this thing, but it does come with a few already preloaded. Feel free to share your lists once you get them matured. 
 
 Known processes will simply be standard white text with a note off to the right. If one of the **known** processes also hits a category from the processcolor.cna script, then it will be *colorized()*. The lists for the color categories are found at the bottom of the script.
 
-### 4)Document new processes or update old one
+### 4) Document new processes or update old one
 
 If and when you discover an *++UNKNOWN PROCESS++*, this is where the script gets good. Right click on the beacon to bring up the context menu, and select **Quickrundown** at the bottom. 
 
@@ -48,11 +48,11 @@ To **update** an existing processes, do everything that you would do to add in a
 
 *NOTE:* New or updated processes will not show characterization by **qrd** until you complete the next step
 
-### 5)Reload *Quickrundown.cna* via the script console
+### 5) Reload *Quickrundown.cna* via the script console
 
 The processes you have researched are written to the *Quickrundown.cna* file, yes. However, they are not loaded into memory within Cobaltstrike just yet. Go to the *Script Console* within Cobaltstrike and reload the script
 
-### 6)Verify and repeat
+### 6) Verify and repeat
 
 With the script reloaded, run **qrd** again to see your work displayed. Known processes will be displayed in certain colors if they match specific categories (that you can add to, located at the bottom of the script). 
 
