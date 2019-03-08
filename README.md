@@ -1,6 +1,6 @@
 # Quickrundown
 
-# Quickrundown
+![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/quickrundown.png "QRD")
 
 ## Table of Contents
 1. Summary and Methodology
@@ -22,9 +22,9 @@ Finally: the "just tell me how to turn it on" portion of the README.
 
 ### 1) Load the script
 
-First, you will need to pull down Quickrundown.cna and place it on your filesystem. Make sure you remember where on the filesystem you will be loading this script (/home/ubuntu/Quickrundown.cna, for example). 
+First, you will need to pull down quickrundown.cna and place it on your filesystem. Make sure you remember where on the filesystem you will be loading this script (/home/ubuntu/quickrundown.cna, for example). 
 
-Open the script and at the top you will see a variable labeled *$filesystem*. Edit this variable to say where *Quickrundown.cna* is being loaded from. Ensure that Cobaltstrike can **write** to this file
+Open the script and at the top you will see a variable labeled *$filesystem*. Edit this variable to say where *quickrundown.cna* is being loaded from. Ensure that Cobaltstrike can **write** to this file
 
 ![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step1.png "Step 1")
 
@@ -58,9 +58,9 @@ To **update** an existing processes, do everything that you would do to add in a
 
 *NOTE:* New or updated processes will not show characterization by **qrd** until you complete the next step
 
-### 5) Reload *Quickrundown.cna* via the script console
+### 5) Reload *quickrundown.cna* via the script console
 
-The processes you have researched are written to the *Quickrundown.cna* file, yes. However, they are not loaded into memory within Cobaltstrike just yet. Go to the *Script Console* within Cobaltstrike and reload the script
+The processes you have researched are written to the *quickrundown.cna* file, yes. However, they are not loaded into memory within Cobaltstrike just yet. Go to the *Script Console* within Cobaltstrike and reload the script
 
 ![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step5.png "Step 5")
 
@@ -76,9 +76,9 @@ How does this thing work?
 
 First, QRD is taking data returned from **bps** and manipulating it in certain ways. It uses a variety of loops, lists, and arrays to place things where they need to go. I tried to comment the loops and variables as best as I could to help you follow along.
 
-Second, to add a new process the script takes a different route. The *Quickrundown.cna* file is first opened in readonly mode and iterated through via a **while** loop. The loop will look for certain strings in the code, and take action once those strings are found. It will add the new process to a list, and the note to an array that is keyed to the process name; if the process name is already in the list or array, it will just overwrite the note instead. 
+Second, to add a new process the script takes a different route. The *quickrundown.cna* file is first opened in readonly mode and iterated through via a **while** loop. The loop will look for certain strings in the code, and take action once those strings are found. It will add the new process to a list, and the note to an array that is keyed to the process name; if the process name is already in the list or array, it will just overwrite the note instead. 
 
-As each line is read it is placed into a new list, and once the keywords are hit they are placed into the same list as well. The *Quickrundown.cna* file is closed and reopened with the **>** flag: this flag means that it will overwrite the entire file. The list holding our hold file is then iterated through, line by line, and pushed into the file. The file is closed with your new data in it. 
+As each line is read it is placed into a new list, and once the keywords are hit they are placed into the same list as well. The *quickrundown.cna* file is closed and reopened with the **>** flag: this flag means that it will overwrite the entire file. The list holding the old file is then iterated through, line by line, and pushed into the file. The file is closed with your new data in it. 
 
 TL;DR: I rewrite the entire file with your new data in it. This is why it needs reloaded. 
 
