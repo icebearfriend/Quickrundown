@@ -91,7 +91,7 @@ sub fullps{ # this function will run the ps command (bps) and utilize a bunch of
 	$allin .= "\cC[*]\o Admin Tools: \cB LIGHT BLUE \o \n";
 	$allin .= "\cC[*]\o Browsers: \c3 GREEN \o \n";
 	$allin .= "\cC[*]\o AV/EDR: \c4 RED \o \n";
-  $allin .= "\cA[*]\o Infrastructure: \cA Turquois \o \n\n";
+  $allin .= "\cA[*]\o Infrastructure: \cA Turquoise \o \n\n";
   $allin .= "$[25]note1  $[5]note2\t$[4]note3\t$[15]note4\t$note5\n";
   $allin .= ("-" x 60);
   
