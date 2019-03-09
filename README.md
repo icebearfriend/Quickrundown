@@ -24,7 +24,7 @@ Finally: the "just tell me how to turn the damn thing on" portion of the README.
 
 First, you will need to pull down quickrundown.cna and place it on your filesystem. Make sure you remember where on the filesystem you will be loading this script (/home/ubuntu/quickrundown.cna, for example). 
 
-Open the script and at the top you will see a variable labeled *$filesystem*. Edit this variable to say where *quickrundown.cna* is being loaded from. Ensure that Cobaltstrike can **write** to this file.
+Open the script and at the top you will see a variable labeled *$yourfile*. Edit this variable to say where *quickrundown.cna* is being loaded from. Ensure that Cobaltstrike can **write** to this file.
 
 ![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step1.png "Step 1")
 
