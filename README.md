@@ -48,7 +48,9 @@ If and when you discover an *++UNKNOWN PROCESS++* (as seen above), this is where
 
 ![alt text](https://raw.githubusercontent.com/1c3be4r/stash/master/step3_.png "Step 4 also")
 
-Place the full process name into the top box (*newprocess.exe*) and the note you would like for the processes in the box below it.  **Case sensitivity applies! How you see it in the process list is how it should be entered**. Hit **create/update**.
+Place the full process name into the top box (*newprocess.exe*) and the note you would like for the processes in the box below it.  **Case sensitivity applies! How you see it in the process list is how it should be entered**. 
+
+Hit **create/update**.
 
 Continue these steps until you are satisfied with your research progress.
 
